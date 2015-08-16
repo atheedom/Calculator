@@ -34,28 +34,9 @@ public class Calculator {
         this.runningValue = value;
     }
 
-//    static public Calculator getInstance() {
-//        return new Calculator();
-//    }
-//
-//    static public Calculator getInstance(ZeroMode zeroMode) {
-//        return new Calculator(zeroMode);
-//    }
-//
-//    static public Calculator getInstance(int newScale, int roundingMode) {
-//        Calculator calculator = new Calculator();
-//        calculator.setNewScale(newScale);
-//        calculator.setRoundingMode(roundingMode);
-//        return calculator;
-//    }
-//
-//    static public Calculator getInstance(ZeroMode zeroMode, int newScale, int roundingMode) {
-//        Calculator calculator = new Calculator(zeroMode);
-//        calculator.setNewScale(newScale);
-//        calculator.setRoundingMode(roundingMode);
-//        return calculator;
-//    }
-
+    public Calculator(ZeroMode zeroMode) {
+        this.zeroMode = zeroMode;
+    }
 
     public Calculator setMode(ZeroMode zeroMode){
         this.zeroMode = zeroMode;
